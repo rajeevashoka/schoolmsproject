@@ -1,0 +1,71 @@
+body {
+    padding-top: 56px;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+}
+
+.principal-img {
+    max-width: 40%;
+    /* Make the image responsive */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Container for the scrolling notice */
+.notice-box {
+    width: 100%;
+    /* Full width */
+    height: 150px;
+    /* Set height to display limited notices at a time */
+    overflow: hidden;
+    /* Hide overflow */
+    border: 1px solid #ddd;
+    /* Add border for styling */
+    border-radius: 8px;
+    /* position: relative; */
+    background-color: #f8f9fa;
+}
+
+/* Animated list of notices */
+.notice-list {
+    display: flex;
+    /* position: absolute; */
+    flex-direction: column;
+    animation: scrollUp 20s linear infinite;
+    /* Adjust duration for speed */
+    /* Animation for smooth scrolling */
+}
+
+.notice-item {
+    padding: 10px 0;
+    /* Spacing between notices */
+}
+
+/* Define keyframes for the scrolling effect */
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Individual notice item */
+.notice-item {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ffc107;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+}
+
+address {
+    display: block;
+    font-style: italic;
+}
